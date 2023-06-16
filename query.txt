@@ -175,6 +175,10 @@ WHERE awards.id = 5 AND award_videogame.year = "2018" AND tournaments.year = "20
 *********** BONUS ***********
 
 10- Selezionare i dati della prima software house che ha rilasciato un gioco, assieme ai dati del gioco stesso (software house id : 5)
+SELECT *
+FROM videogames v
+JOIN software_houses sh ON v.software_house_id = sh.id
+ORDER BY release_date
 
 11- Selezionare i dati del videogame (id, name, release_date, totale recensioni) con più recensioni (videogame id : potrebbe uscire 449 o 398, sono entrambi a 20)
 
